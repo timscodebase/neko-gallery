@@ -1,6 +1,6 @@
 <script lang="ts">
 import { onMount } from "svelte";
-import type { User, Repo } from "../utils/types";
+import type { User } from "../utils/types";
 export let user: User;
 export let selectedCategory: string;
 export let onCategorySelect: (category: string | null) => void;

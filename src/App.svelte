@@ -2,14 +2,14 @@
 import { onMount } from "svelte";
 import { graphql } from "@octokit/graphql";
 import axios from "axios";
-import type { User, Repo, LangColor } from "./utils/types";
+import type { User, LangColor } from "./utils/types";
 import Loading from "./components/Loading.svelte";
 import Header from "./components/Header.svelte";
 import RepoItem from "./components/RepoItem.svelte";
 
-const username = "nekocode";
+const username = "timscodebase";
 // Used base64 encoding to bypass the protection of github
-const token = atob("ODNiOWFhNmFiM2ZlMWYxYWY2ODA5NTc2YTllN2YwMTA1MTY0NzgzOA==");
+const token = atob("93ccb096589c244a55efb49698d6436835f47949");
 
 let user: User;
 let langColors: LangColor;
